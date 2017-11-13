@@ -10,7 +10,8 @@
     font-size : 110%;
     font-style : italic;
     font-weight : normal;
-    width: 100%;
+    /*width: 100%;*/
+    margin-left: -5px;
 }
 .navClass {
   width:100%;
@@ -23,18 +24,30 @@
   position: relative;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  float: left;
 }
 .logoDiv{
-  width: 100%;
-  height:auto;
+  width: 50%;
+  height:200px;
   background-color: #CCCCCC;
   margin-top: -10px;
   /*background-image: url("file:///Users/Akshay/Desktop/POOJA%20MS/JavaScript/assignments/images/banner2.jpg");*/
   /*background-repeat: no-repeat;
   background-size: 100% 250px;*/
-  text-align: center;
+  text-align: left;
   padding-top: 10px;
   font-size: 30px;
+  float: left;
+}
+.linkDiv {
+  float: left;
+  background-color: #CCCCCC;
+  width: 30.3%;
+  height: 180px;
+  padding-top: 30px;
+  margin-top: -10px;
+  text-align: right;
+  padding-right: 250px;
 }
 .spanClass {
   margin-right: 20px;
@@ -129,20 +142,33 @@ a:hover {
     }
     hr{
       border-top: 2px solid brown;
+      float: left;
 
     }
     h2{
       padding-bottom: 0px;
       margin-bottom: 0px;
+      padding-left: 20px;
+    }
+    .intro{
+    	padding-left: 20px;
     }
   </style>
 </head>
 <body class="bodyClass">
     <header>
-  <section class="logoDiv">
+  <div class="logoDiv">
     <h2>Pooja Nitin Mahajan</h2><br>
-    <p>Welcome to my GitHub projects.<br>Please click on below links to explore my work in detail.</p>
-  </section>  
+    <p class="intro">Welcome to my GitHub projects.<br>Please click on below links to explore my work in detail.</p>
+  </div>  
+  <div class="linkDiv">
+    <a href="https://github.com/mahajan-pooja" target="_blank">
+    <img src="gitImg.png" width="50" height="50"></a>
+    &nbsp&nbsp&nbsp&nbsp&nbsp
+    <a href="http://www.linkedin.com/in/pooja9378" target="_blank">
+    <img src="linkedImg.png" width="50" height="50"></a>
+
+  </div>
   <nav class="navClass">
     <span class="spanClass"><a href="#html" class="anchorTop" onclick="window.location.href = '#html';">HTML/CSS</a></span>
     <span class="spanClass"><a href="#javascript" class="anchorTop">JAVASCRIPT</a></span>
@@ -153,12 +179,12 @@ a:hover {
 </header>
 <div id="html">
   <p class="heading">HTML & CSS</p>
-      <div class="project_div_one">
+      <div class="project_div_one" style="margin-left:40%;">
         <p>Silvergems</p>
         <p><a href="https://mahajan-pooja.github.io/Silvergems" target="_blank">Website</a></p>
         <p><a href="https://github.com/mahajan-pooja/Silvergems" target="_blank">GitHub</a></p>
       </div>
-      <div class="project_div_two">
+      <!-- <div class="project_div_two">
         <p>E-Library</p>
         <p><a href="https://mahajan-pooja.github.io/Silvergems" target="_blank">Website</a></p>
         <p><a href="https://github.com/mahajan-pooja/Silvergems" target="_blank">GitHub</a></p>
@@ -167,12 +193,12 @@ a:hover {
         <p>Kaleidoscope</p>
         <p><a href="https://mahajan-pooja.github.io/Silvergems" target="_blank">Website</a></p>
         <p><a href="https://github.com/mahajan-pooja/Silvergems" target="_blank">GitHub</a></p>
-      </div>
+      </div> -->
 </div>
 <hr>
 <div id="javascript">
   <p class="heading">JAVASCRIPT, HTML & CSS</p>
-  <div class="project_div_one" style="margin-left: 450px;">
+  <div class="project_div_one" style="margin-left: 40%;">
         <p>Cake Store</p>
         <p><a href="https://mahajan-pooja.github.io/cakeStore" target="_blank">Website</a></p>
         <p><a href="https://github.com/mahajan-pooja/cakeStore" target="_blank">GitHub</a></p>
@@ -182,10 +208,9 @@ a:hover {
 <hr>
 <div id="java">
    <p class="heading" style="margin-right: 10%;">JAVA</p>
-  <div class="project_div_one" style="margin-left: 450px;">
+  <div class="project_div_one" style="margin-left: 40%;">
         <p>Restaurant Management</p>
-        <p><a href="https://mahajan-pooja.github.io/cakeStore" target="_blank">Website</a></p>
-        <p><a href="https://github.com/mahajan-pooja/cakeStore" target="_blank">GitHub</a></p>
+        <p><a href="https://github.com/mahajan-pooja/Restaurant-Management" target="_blank">GitHub</a></p>
   </div>
 </div>
 <hr>
@@ -193,18 +218,15 @@ a:hover {
   <p class="heading" style="margin-right: 10%;">ANDROID</p>
   <div class="project_div_one">
         <p>Geo Locator</p>
-        <p><a href="https://mahajan-pooja.github.io/cakeStore" target="_blank">App</a></p>
-        <p><a href="https://github.com/mahajan-pooja/cakeStore" target="_blank">GitHub</a></p>
+        <p><a href="https://github.com/mahajan-pooja/Geo-Locator" target="_blank">GitHub</a></p>
   </div>
   <div class="project_div_two">
-        <p>English & Marathi</p>
-        <p><a href="https://mahajan-pooja.github.io/cakeStore" target="_blank">App</a></p>
-        <p><a href="https://github.com/mahajan-pooja/cakeStore" target="_blank">GitHub</a></p>
+        <p>English To Marathi</p>
+        <p><a href="https://github.com/mahajan-pooja/English-To-Marathi" target="_blank">GitHub</a></p>
   </div>
   <div class="project_div_three">
-        <p>Earthquack</p>
-        <p><a href="https://mahajan-pooja.github.io/cakeStore" target="_blank">App</a></p>
-        <p><a href="https://github.com/mahajan-pooja/cakeStore" target="_blank">GitHub</a></p>
+        <p>Quake Report</p>
+        <p><a href="https://github.com/mahajan-pooja/Quake-Report" target="_blank">GitHub</a></p>
   </div>
 </div>
 </body>
